@@ -10,7 +10,7 @@ import banner5 from "../../assets/banner5.jpg";
 //MUI imports
 import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -29,11 +29,12 @@ export const Slider = () => {
         className="container"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
-        <Link to="/"><img src={data[0]} alt="" /></Link>
+        <Link to="/shop"><img src={data[0]} alt="" />
         <img src={data[1]} alt="" />
         <img src={data[2]} alt="" />
         <img src={data[3]} alt="" />
         <img src={data[4]} alt="" />
+        </Link>
       </div>
       <div className="icons">
         <div className="icon" onClick={prevSlide}>

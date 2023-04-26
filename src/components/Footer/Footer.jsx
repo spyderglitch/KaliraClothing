@@ -4,7 +4,7 @@ import './footer.scss';
 import logo from "../../assets/logo.png";
 
 //MUI imports
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
